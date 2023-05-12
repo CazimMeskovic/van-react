@@ -1,4 +1,5 @@
 {
+  "homepage": "http://CazimMeskovic.github.io/van-react",
   "name": "18---outro",
   "dependencies": {
     "firebase": "^9.21.0",
@@ -10,10 +11,13 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "*",
+    "gh-pages": "^5.0.0",
     "vite": "latest"
   },
   "scripts": {
     "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
